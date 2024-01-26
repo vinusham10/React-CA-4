@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+#main-div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-gap: 50px;
+}
+
+.question-modal {
+    /* height: 400px; */
+    background-color: #7A3B69;
+    width: 62%;
+    height: 60%;
+    border-radius: 20px;
+    padding: 16px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px 10em;
+    width: 100%;
+}
+.nav-bar button {
+    background-color: rgb(26, 25, 25);
+    border-radius: 4px;
+    padding: 2px;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+.nav-bar span {
+    font-weight: 600;
+    font-size: 24px;
+    opacity: 0.6;
+}
+#questions {
+    display: grid;
+    grid-template-rows: 32px;
+    height: 100px;
+    margin-bottom: 8px;
+    color: white;
+    margin-top: 25px;
+}
+#questions p {
+    font-size: 34px;
+    position: relative;
+    top: -40px;
+    font-weight: 600;
+}
+
+#options-div {
+    display: grid;
+    grid-template-columns: 340px;
+    justify-content: center;
+    grid-template-rows: repeat(4, 32px);
+    grid-gap: 24px;
+    margin-top: 25px;
+}
+#options-div button {
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background-color: #EDE3E9;
+    font-weight: 600;
+    border: 0;
+}
+#options-div button:hover {
+    box-shadow: 0px 0px 6px rgb(224, 195, 241);
+    transform: scale(1.03);
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    transition: transform 0.2s ease-in-out;
+
+}
+.highlight-btn-div {
+    display: flex;
+    justify-content: center;
+    gap:8px;
+    margin-top: 48px;
+}
+.highlight-btn-div button{
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: rgb(33, 31, 31);
+    color: rgb(244, 250, 255);
+    font-weight: 600;
+    border: 0;
+}
+.nav-bar button:hover,.highlight-btn-div button:hover{
+    box-shadow: 0px 0px 16px rgb(216, 216, 216);
+    transform: scale(1.02);
+}
+#logo{
+    font-family: 'Gamja Flower', sans-serif;
+    font-size: 35px;
+    color: #c877ff;
+}
+.highLighter {
+    color: #e6a3ff;
+}
